@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mukta&family=Poppins&family=Public+Sans:wght@300&family=Rubik&family=Ubuntu&family=Varela+Round&family=Work+Sans:ital,wght@0,400;0,500;1,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --transparent-black: rgba(0, 0, 0, 0.294);
+    --black: #111111;
+    --grey: rgba(255, 255, 255, 0.597);
+    --orange: #ff805d;
+    --green: rgb(54, 234, 54);
+    --orange-gradient: linear-gradient(
+        268.35deg,
+        hsla(0, 100%, 64%, 0.988) 3.47%,
+        rgba(255, 114, 70, 0.99) 60.18%
+    );
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.app{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    position: relative;
+}
+.dashboard{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+
+.gradient-red{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #ff5d5d;
+    filter: blur(90px);
+}
+.gradient-orange{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--orange);
+    filter: blur(90px);
+}
+.gradient-blue{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #5dc9ff;
+    filter: blur(90px);
+}
+
+.topBaseGradients{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 20rem;
+    overflow: hidden;
+    filter: blur(8px);
+    z-index: -1;
+}
+.topBaseGradients>:nth-child(2){
+    left: 40%;
+}
+.topBaseGradients>:nth-child(3){
+    right: 0;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background: var(--orange-gradient);
+    border-radius: 12px;
+    margin-left: 3rem;
+    width: 6.5rem;
+    height: 2.5rem;
+}
