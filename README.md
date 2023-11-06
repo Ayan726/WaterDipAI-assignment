@@ -6,7 +6,7 @@ This assignment focuses on making charts from a bunch of hotel booking data.
 - Move to server directory and create a `.env` file and put your own `MONGO_URI` as shown in `.env.example` file
 - run `npm i` on the terminal and run `npm run dev`
 - Move to client directory and in another terminal, run `npm i` followed by `npm run dev`
-- Now open browser on `http://localhost:5173`
+- Now open `http://localhost:5173` on browser
 ## My approach of building
 - I converted the .csv file into .json file and pushed into mongoDB using Node & express
 - Made an api route to fetch data between 2 dates passed as query parameter
